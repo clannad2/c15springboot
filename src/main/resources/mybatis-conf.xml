@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE configuration  PUBLIC "-//mybatis.org//DTD Config 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-config.dtd">
+<configuration>
+    <settings>
+<!--&lt;!&ndash;        将下划线转换成驼峰命名&ndash;&gt;-->
+        <setting name="mapUnderscoreToCamelCase" value="true"/>
+<!--        <setting name="autoMappingBehavior" value="NONE"/>-->
+        <!-- 开启延迟加载 -->
+        <setting name="lazyLoadingEnabled" value="true"/>
+        <!-- 设置加载的数据是按需还是全部 -->
+        <setting name="aggressiveLazyLoading" value="false"/>
+
+    </settings>
+
+    <plugins>
+        <plugin interceptor="com.github.pagehelper.PageInterceptor"></plugin>
+    </plugins>
+
+</configuration>

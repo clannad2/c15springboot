@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.cebbank.liuxiaoming.springboot.mapper.EmployeeMapper">
+
+    <select id="emps" resultType="Employee">
+        select * from employee
+    </select>
+
+    <select id="queryEmpById" resultType="Employee">
+        select * from employee where id=#{id}
+    </select>
+
+
+
+
+</mapper>
